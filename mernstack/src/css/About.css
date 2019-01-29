@@ -1,0 +1,18 @@
+.row-padded {
+  background-color: #eee;
+  border: 1px solid #DDD;
+  opacity: 0.8;
+  margin-left: 20px;
+  margin-right: 20px;
+  
+  border: 2px solid;
+  border-radius: 25px;
+}
+
+.row-padded .span3 {
+  background-color: #bbb;
+}
+
+/*.jumbotron-opacity{
+    opacity: 0.8;
+}*/

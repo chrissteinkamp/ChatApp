@@ -1,0 +1,184 @@
+body {
+    background: url('../../images/sceneryBG.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-bottom: 100px;
+}
+
+.dropdown.dropdown-lg .dropdown-menu {
+    margin-top: -1px;
+    padding: 6px 20px;
+}
+.input-group-btn .btn-group {
+    display: flex !important;
+}
+.btn-group .btn {
+    border-radius: 0;
+    margin-left: -1px;
+}
+.btn-group .btn:last-child {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.btn-group .form-horizontal .btn[type="submit"] {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.form-horizontal .form-group {
+    margin-left: 0;
+    margin-right: 0;
+}
+.form-group .form-control:last-child {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+    #adv-search {
+        width: 500px;
+        margin: 0 auto;
+    }
+    .dropdown.dropdown-lg {
+        position: static !important;
+    }
+    .dropdown.dropdown-lg .dropdown-menu {
+        min-width: 500px;
+    }
+}
+
+.navbar-default {
+    background: linear-gradient(#FFFFFF, #C0C0C0) !important;
+    border-color: #C0C0C0 !important;
+    box-shadow: 3px 4px 6px 0px rgba(0,0,0,0.25);
+}
+
+.font {
+    color: #000000 !important;
+}
+.font:hover {
+    color: #000000 !important;
+    background: #909090 !important;
+}
+.navbar-brand {
+    color: #000000 !important;
+}
+
+
+
+
+
+
+
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 3; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    padding-bottom: 20px;
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    opacity: 0.85;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #FFFFFF;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.sidenav .title {
+    position: absolute;
+    top: 8px;
+    left: 0px;
+    color: #FFFFFF;
+}
+
+.sidenav .location:focus{
+    text-decoration: underline;
+    color: #DAA520;
+    background: #00BFFF;
+}
+
+.sideNavOption{
+    color: #FFFFFF;
+    background: #045770;
+}
+
+.chatRooms {
+   list-style: none;
+   color: #FFFFFF;
+   background: #045770;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.navBrand {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+    padding-left: 0px;
+}
+
+
+
+/*navbar collapse override*/
+.navbar-collapse.collapse {
+  display: block !important;
+}
+
+.navbar-nav>li, .navbar-nav {
+  float: left !important;
+}
+
+.navbar-nav.navbar-right:last-child {
+  margin-right: 0px !important;
+}
+
+.navbar-right {
+  float: right !important;
+}
+
+/*add chat room dialog input/button alignment*/
+/*directly overrides bootstrap class (may need to change later)*/
+.input-group-addon{
+    padding: 0px;
+    border: none;
+}
